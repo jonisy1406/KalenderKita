@@ -241,6 +241,7 @@ Catatan: cuti bersama Indonesia ditetapkan pemerintah setiap tahun. Data tahun m
 
 Konfigurasi Vercel ada di `vercel.json`.
 
+- Project ini memakai static files + Python Serverless Functions, jadi Framework Preset Vercel sebaiknya `Other`. File `vercel.json` sudah mengatur `"framework": null` agar tidak diperlakukan sebagai single Python backend app.
 - File statis disajikan dari `public/`.
 - Endpoint serverless ada di `api/holidays.py` dan `api/sync.py`.
 - File `data/holidays/**` ikut dibundel melalui `includeFiles`.
