@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kalender Indonesia</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="calendar-panel" aria-labelledby="calendar-title">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Kalender Indonesia</p>
+            <h1 id="calendar-title">Mei 2026</h1>
+          </div>
+          <div class="filters" aria-label="Filter kalender">
+            <label class="field" for="month-filter">
+              <span>Bulan</span>
+              <select id="month-filter"></select>
+            </label>
+            <label class="field" for="year-filter">
+              <span>Tahun</span>
+              <input id="year-filter" type="number" min="1900" max="2200" step="1" />
+            </label>
+          </div>
+          <div class="actions" aria-label="Kontrol kalender">
+            <button id="prev-month" class="icon-button" type="button" aria-label="Bulan sebelumnya">&lsaquo;</button>
+            <button id="today" class="text-button" type="button">Hari ini</button>
+            <button id="next-month" class="icon-button" type="button" aria-label="Bulan berikutnya">&rsaquo;</button>
+            <label class="theme-switch" for="theme-toggle">
+              <input id="theme-toggle" type="checkbox" role="switch" aria-label="Mode gelap" />
+              <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
+              <span id="theme-label">Light</span>
+            </label>
+          </div>
+        </header>
+
+        <div class="status-row">
+          <span id="sync-status">Memuat data...</span>
+          <span id="year-summary"></span>
+        </div>
+
+        <div class="calendar-grid weekdays" aria-hidden="true">
+          <span>Sen</span>
+          <span>Sel</span>
+          <span>Rab</span>
+          <span>Kam</span>
+          <span>Jum</span>
+          <span>Sab</span>
+          <span>Min</span>
+        </div>
+        <div id="calendar-grid" class="calendar-grid days" aria-live="polite"></div>
+      </section>
+
+      <aside class="agenda-panel" aria-labelledby="agenda-title">
+        <div class="agenda-header">
+          <div>
+            <p class="eyebrow">Agenda</p>
+            <h2 id="agenda-title">Mei</h2>
+          </div>
+          <div class="legend">
+            <span><i class="legend-dot holiday"></i>Libur</span>
+            <span><i class="legend-dot leave"></i>Cuti</span>
+          </div>
+        </div>
+
+        <div class="summary-grid">
+          <div>
+            <strong id="holiday-count">0</strong>
+            <span>Libur nasional</span>
+          </div>
+          <div>
+            <strong id="leave-count">0</strong>
+            <span>Cuti bersama</span>
+          </div>
+        </div>
+
+        <ol id="agenda-list" class="agenda-list"></ol>
+      </aside>
+    </main>
+
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>

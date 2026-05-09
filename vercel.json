@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/*.py": {
+      "includeFiles": "data/holidays/**"
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/sync",
+      "schedule": "0 17 * * *"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "year": 2025,
+  "items": [
+    {
+      "date": "2025-01-01",
+      "name": "Tahun Baru 2025 Masehi",
+      "type": "libur_nasional",
+      "day": "Rabu",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-01-27",
+      "name": "Isra Mi’raj Nabi Muhammad SAW",
+      "type": "libur_nasional",
+      "day": "Senin",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-01-28",
+      "name": "Tahun Baru Imlek 2576 Kongzili",
+      "type": "cuti_bersama",
+      "day": "Selasa",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-01-29",
+      "name": "Tahun Baru Imlek 2576 Kongzili",
+      "type": "libur_nasional",
+      "day": "Rabu",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-03-28",
+      "name": "Hari Suci Nyepi Tahun Baru Saka 1947",
+      "type": "cuti_bersama",
+      "day": "Jumat",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-03-29",
+      "name": "Hari Suci Nyepi Tahun Baru Saka 1947",
+      "type": "libur_nasional",
+      "day": "Sabtu",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-03-31",
+      "name": "Hari Raya Idul Fitri 1446 Hijriyah",
+      "type": "libur_nasional",
+      "day": "Senin",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-04-01",
+      "name": "Hari Raya Idul Fitri 1446 Hijriyah",
+      "type": "libur_nasional",
+      "day": "Selasa",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-04-02",
+      "name": "Hari Raya Idul Fitri 1446 Hijriyah",
+      "type": "cuti_bersama",
+      "day": "Rabu",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-04-03",
+      "name": "Hari Raya Idul Fitri 1446 Hijriyah",
+      "type": "cuti_bersama",
+      "day": "Kamis",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-04-04",
+      "name": "Hari Raya Idul Fitri 1446 Hijriyah",
+      "type": "cuti_bersama",
+      "day": "Jumat",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-04-07",
+      "name": "Hari Raya Idul Fitri 1446 Hijriyah",
+      "type": "cuti_bersama",
+      "day": "Senin",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-04-18",
+      "name": "Wafat Yesus Kristus / Jumat Agung",
+      "type": "libur_nasional",
+      "day": "Jumat",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-04-20",
+      "name": "Kebangkitan Yesus Kristus (Paskah)",
+      "type": "libur_nasional",
+      "day": "Minggu",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-05-01",
+      "name": "Hari Buruh Internasional",
+      "type": "libur_nasional",
+      "day": "Kamis",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-05-12",
+      "name": "Hari Raya Waisak 2569 BE",
+      "type": "libur_nasional",
+      "day": "Senin",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-05-13",
+      "name": "Hari Raya Waisak 2569 BE",
+      "type": "cuti_bersama",
+      "day": "Selasa",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-05-29",
+      "name": "Kenaikan Yesus Kristus",
+      "type": "libur_nasional",
+      "day": "Kamis",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-05-30",
+      "name": "Kenaikan Yesus Kristus",
+      "type": "cuti_bersama",
+      "day": "Jumat",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-06-01",
+      "name": "Hari Lahir Pancasila",
+      "type": "libur_nasional",
+      "day": "Minggu",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-06-06",
+      "name": "Hari Raya Idul Adha 1446 Hijriyah",
+      "type": "libur_nasional",
+      "day": "Jumat",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-06-09",
+      "name": "Hari Raya Idul Adha 1446 Hijriyah",
+      "type": "cuti_bersama",
+      "day": "Senin",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-06-27",
+      "name": "Tahun Baru Islam 1447 Hijriyah",
+      "type": "libur_nasional",
+      "day": "Jumat",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-08-17",
+      "name": "Hari Kemerdekaan Republik Indonesia",
+      "type": "libur_nasional",
+      "day": "Minggu",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-08-18",
+      "name": "Hari Kemerdekaan Republik Indonesia",
+      "type": "cuti_bersama",
+      "day": "Senin",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-09-05",
+      "name": "Maulid Nabi Muhammad SAW",
+      "type": "libur_nasional",
+      "day": "Jumat",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-12-25",
+      "name": "Hari Raya Natal",
+      "type": "libur_nasional",
+      "day": "Kamis",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    },
+    {
+      "date": "2025-12-26",
+      "name": "Hari Raya Natal",
+      "type": "cuti_bersama",
+      "day": "Jumat",
+      "source": "Tanggal Merah API",
+      "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025"
+    }
+  ],
+  "meta": {
+    "source": "Tanggal Merah API",
+    "source_url": "https://tanggalmerah.upset.dev/api/holidays?year=2025",
+    "synced_at": "2026-05-08T16:01:20.652336+00:00",
+    "item_count": 28,
+    "cache_status": "fresh"
+  }
+}
