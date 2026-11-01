@@ -33,6 +33,8 @@ const elements = {
   yearSummary: document.querySelector("#year-summary"),
   holidayCount: document.querySelector("#holiday-count"),
   leaveCount: document.querySelector("#leave-count"),
+  holidayYearCount: document.querySelector("#holiday-year-count"),
+  leaveYearCount: document.querySelector("#leave-year-count"),
   monthFilter: document.querySelector("#month-filter"),
   yearFilter: document.querySelector("#year-filter"),
   prevMonth: document.querySelector("#prev-month"),
@@ -126,7 +128,7 @@ function render() {
   syncFilters(year, month);
   renderCalendar(year, month, itemsByDate);
   renderAgenda(year, month, items);
-  renderSummary(year, items, meta);
+  renderSummary(year, month, items, meta);
 }
 
 function renderCalendar(year, month, itemsByDate) {
@@ -210,12 +212,20 @@ function renderAgenda(year, month, items) {
     .join("");
 }
 
-function renderSummary(year, items, meta) {
-  const holidayTotal = items.filter((item) => item.type === "libur_nasional").length;
-  const leaveTotal = items.filter((item) => item.type === "cuti_bersama").length;
+function renderSummary(year, month, items, meta) {
+  const monthPrefix = `${year}-${pad(month + 1)}-`;
+  const monthItems = items.filter((item) => item.date.startsWith(monthPrefix));
+  const holidayTotal = monthItems.filter((item) => item.type === "libur_nasional").length;
+  const leaveTotal = monthItems.filter((item) => item.type === "cuti_bersama").length;
+  const holidayYearTotal = items.filter((item) => item.type === "libur_nasional").length;
+  const leaveYearTotal = items.filter((item) => item.type === "cuti_bersama").length;
   elements.holidayCount.textContent = holidayTotal;
   elements.leaveCount.textContent = leaveTotal;
-  elements.yearSummary.textContent = items.length ? `${items.length} tanggal pada ${year}` : "";
+  elements.holidayYearCount.textContent = holidayYearTotal;
+  elements.leaveYearCount.textContent = leaveYearTotal;
+  elements.yearSummary.textContent = items.length
+    ? `${items.length} agenda sepanjang ${year}`
+    : `Belum ada agenda untuk ${year}`;
 
   if (meta.cache_status === "fresh") {
     updateStatus("Data diperbarui otomatis.");

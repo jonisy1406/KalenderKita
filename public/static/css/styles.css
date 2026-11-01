@@ -1,9 +1,9 @@
 :root {
   color-scheme: light;
-  --bg: #f5f7fb;
+  --bg: #f5f6f8;
   --surface: #ffffff;
   --surface-panel: rgba(255, 255, 255, 0.92);
-  --surface-soft: #f0f4f8;
+  --surface-soft: #f7f8fa;
   --empty-cell: #f8fafc;
   --border: #d9e2ec;
   --text: #172033;
@@ -16,7 +16,7 @@
   --leave-soft: #fff1f2;
   --weekend-soft: #fff7f7;
   --today: #2563eb;
-  --shadow: 0 16px 40px rgba(20, 31, 50, 0.08);
+  --shadow: 0 10px 28px rgba(20, 31, 50, 0.06);
 }
 
 [data-theme="dark"] {
@@ -52,7 +52,7 @@ body {
   min-height: 100%;
   margin: 0;
   background:
-    linear-gradient(180deg, color-mix(in srgb, var(--surface) 72%, transparent), color-mix(in srgb, var(--bg) 90%, transparent)),
+    linear-gradient(180deg, color-mix(in srgb, var(--surface) 82%, transparent), color-mix(in srgb, var(--bg) 94%, transparent)),
     var(--bg);
   color: var(--text);
   font-family:
@@ -72,9 +72,9 @@ button {
 
 .app-shell {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 320px;
-  gap: 14px;
-  width: min(1180px, 100%);
+  grid-template-columns: minmax(0, 1fr) 350px;
+  gap: 20px;
+  width: min(1240px, 100%);
   margin: 0 auto;
   padding: 14px;
 }
@@ -82,7 +82,7 @@ button {
 .calendar-panel,
 .agenda-panel {
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 14px;
   background: var(--surface-panel);
   box-shadow: var(--shadow);
 }
@@ -91,14 +91,14 @@ button {
   display: flex;
   min-width: 0;
   flex-direction: column;
-  padding: 14px;
+  padding: 20px;
 }
 
 .agenda-panel {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  padding: 14px;
+  padding: 20px;
 }
 
 .topbar,
@@ -149,7 +149,7 @@ button {
 .field input {
   min-height: 38px;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 9px;
   background: var(--surface);
   color: var(--text);
   font: inherit;
@@ -184,7 +184,7 @@ h2 {
 }
 
 h1 {
-  font-size: 1.65rem;
+  font-size: 1.8rem;
 }
 
 h2 {
@@ -198,7 +198,7 @@ h2 {
   align-items: center;
   justify-content: center;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 9px;
   background: var(--surface);
   color: var(--text);
   cursor: pointer;
@@ -215,7 +215,7 @@ h2 {
   align-items: center;
   gap: 8px;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 9px;
   padding: 0 10px;
   background: var(--surface);
   color: var(--text);
@@ -309,7 +309,7 @@ h2 {
   overflow: hidden;
   border: 1px solid var(--border);
   border-bottom: 0;
-  border-radius: 8px 8px 0 0;
+  border-radius: 12px 12px 0 0;
   background: var(--surface-soft);
   color: var(--muted);
   font-size: 0.78rem;
@@ -330,14 +330,14 @@ h2 {
 .days {
   overflow: hidden;
   border: 1px solid var(--border);
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 12px 12px;
   background: var(--border);
   gap: 1px;
 }
 
 .day-cell {
   display: flex;
-  min-height: 78px;
+  min-height: 92px;
   min-width: 0;
   flex-direction: column;
   gap: 6px;
@@ -455,9 +455,18 @@ h2 {
 
 .summary-grid div {
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 14px;
-  background: var(--surface-soft);
+  border-top: 3px solid var(--primary);
+  border-radius: 10px;
+  padding: 15px;
+  background: var(--surface);
+}
+
+.summary-grid .holiday-card {
+  border-top-color: var(--holiday);
+}
+
+.summary-grid .leave-card {
+  border-top-color: var(--leave);
 }
 
 .summary-grid strong {
@@ -472,6 +481,53 @@ h2 {
   color: var(--muted);
   font-size: 0.85rem;
   font-weight: 700;
+}
+
+.annual-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.annual-summary-label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.annual-heading strong {
+  color: var(--primary-strong);
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.annual-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.annual-grid div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+  padding: 9px 2px;
+}
+
+.annual-grid strong {
+  font-size: 1.2rem;
+}
+
+.annual-grid span {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: right;
 }
 
 .agenda-list {
@@ -490,7 +546,7 @@ h2 {
   grid-template-columns: 48px minmax(0, 1fr);
   gap: 12px;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 12px;
   background: var(--surface);
 }

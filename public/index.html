@@ -39,7 +39,6 @@
 
         <div class="status-row">
           <span id="sync-status">Memuat data...</span>
-          <span id="year-summary"></span>
         </div>
 
         <div class="calendar-grid weekdays" aria-hidden="true">
@@ -67,12 +66,27 @@
         </div>
 
         <div class="summary-grid">
-          <div>
+          <div class="summary-card holiday-card">
             <strong id="holiday-count">0</strong>
+            <span>Libur nasional bulan ini</span>
+          </div>
+          <div class="summary-card leave-card">
+            <strong id="leave-count">0</strong>
+            <span>Cuti bersama bulan ini</span>
+          </div>
+        </div>
+
+        <div class="annual-heading">
+          <span class="annual-summary-label">Total sepanjang tahun</span>
+          <strong id="year-summary"></strong>
+        </div>
+        <div class="annual-grid" aria-live="polite">
+          <div>
+            <strong id="holiday-year-count">0</strong>
             <span>Libur nasional</span>
           </div>
           <div>
-            <strong id="leave-count">0</strong>
+            <strong id="leave-year-count">0</strong>
             <span>Cuti bersama</span>
           </div>
         </div>
